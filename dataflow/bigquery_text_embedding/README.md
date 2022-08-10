@@ -1,6 +1,6 @@
-### Beam/Dataflow pipeline for generating embeddings for a text field in a BigQuery table. 
+### Beam/Dataflow pipeline for generating embeddings from a text field in a BigQuery table. 
 
-This pipeline uses Google's [Universal Sentence Encoder](https://tfhub.dev/google/universal-sentence-encoder/4) to generate 512 dimensional embeddings from a text input. If you wish to use another model you need to change the url in the `EmbedDoFn`'s setup method. The pipeline creates a new BigQuery table that is identical to the source table, with an additional array column: the embedding of the text column specified. 
+This pipeline uses Google's [Universal Sentence Encoder](https://tfhub.dev/google/universal-sentence-encoder/4) to generate 512-dimensional embeddings from a text input. If you wish to use another model you need to change the url in the `EmbedDoFn`'s setup method. The pipeline creates a new BigQuery table that is identical to the source table, with an additional array column: the embedding of the text column specified. 
 
 #### Parameters
 - `project`: Google Cloud project ID. 
