@@ -16,7 +16,7 @@ def create_train_eval_datasets(
     eval_split: float = 0.2,
     batch_size: int = 64,
     eval_batch_size: int = 64,
-    epochs: float = None,
+    epochs: int = None,
     requested_streams: int = 1,
     shuffle_buffer: int = None,
     eval_shuffle_buffer: int = None,
