@@ -149,7 +149,7 @@ def _parse_feature_dict(
     # Ordered dict of all fields 
     features = x
     
-    target = features.pop(target_col)
+    label = features.pop(target_col)
     
     # Map categorical label to integer index in vocab list if needed
     if target_vocab:
