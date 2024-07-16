@@ -1,0 +1,13 @@
+apache-beam[gcp]==2.54.0
+google-cloud-storage==2.17.0
+langchain==0.2.7
+langchain-community==0.2.6
+langchain-core==0.2.12
+langchain-google-community==1.0.6
+langchain-text-splitters==0.2.2
+gcsfs==2024.6.0
+tensorflow==2.12.0
+tensorflow-text==2.12.1
+tensorflow-hub==0.16.1
+pypdf==4.2.0
+cloudpickle==2.2.1

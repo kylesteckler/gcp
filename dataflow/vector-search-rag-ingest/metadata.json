@@ -1,0 +1,39 @@
+{
+    "name": "PDF to Vertex AI Vector Search",
+    "description": "Flex template to orchestrate ingesting, extracting, chunking, embedding, and inserting PDF data into Vertex AI Vector Search",
+    "parameters": [
+        {
+            "name": "project_id",
+            "label": "Google Cloud Project ID",
+            "helpText": "Your Google Cloud Project ID"
+        }, 
+        {
+            "name": "dataset_file",
+            "label": "Dataset file",
+            "helpText": "The path and filename of the input dataset file containing all the PDF paths. Example: gs://bucket/datasetfile.txt",
+            "regexes": [
+                "^gs:\\/\\/[^\\n\\r]+$"
+            ]
+        },
+        {
+            "name": "index_id",
+            "label": "Vector Search Index",
+            "helpText": "The ID or Resource Path of your Vertex AI Vector Search Index"
+        },
+        {
+            "name": "document_bucket",
+            "label": "Document Bucket",
+            "helpText": "Bucket name to store chunk documents. Bucket must exist. Do not include gs:// prefix"
+        },
+        {
+            "name": "chunk_size",
+            "label": "Chunk Size",
+            "helpText": "Number of characters in each text chunk"
+        },
+        {
+            "name": "chunk_overlap",
+            "label": "Chunk Overlap",
+            "helpText": "Number of characters of overlap between each text chunk. Think of this as a sliding window"
+        }
+    ]
+}
